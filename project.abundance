@@ -19,7 +19,7 @@
         },
         {
             "atomType": "Molecule",
-            "name": "Molecule",
+            "name": "MixerBowlCover",
             "x": 0.10272727272727272,
             "y": 0.19672131147540986,
             "uniqueID": 1745962911847,
@@ -104,8 +104,8 @@
                 {
                     "atomType": "Extrude",
                     "name": "Extrude",
-                    "x": 0.24727272727272728,
-                    "y": 0.42857142857142855,
+                    "x": 0.24454545454545454,
+                    "y": 0.4121779859484777,
                     "uniqueID": 1745963059658,
                     "ioValues": [
                         {
@@ -114,7 +114,7 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 5
+                            "ioValue": 10
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -210,10 +210,40 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 5
+                            "ioValue": 3
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Export",
+                    "name": "Export",
+                    "x": 0.75,
+                    "y": 0.6721311475409836,
+                    "uniqueID": 1745963483820,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1745963155682
+                        },
+                        {
+                            "name": "Resolution (dpi)",
+                            "ioValue": 96
+                        },
+                        {
+                            "name": "Part Name",
+                            "ioValue": "MixerBowlCover"
+                        },
+                        {
+                            "name": "File Type",
+                            "ioValue": "STEP"
+                        }
+                    ],
+                    "description": "Export Atom, let's you choose a type of file to Export.",
+                    "type": "STEP",
+                    "resolution": 96,
+                    "importIndex": 0,
+                    "partName": "MixerBowlCover"
                 }
             ],
             "allConnectors": [
@@ -269,6 +299,13 @@
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1745963155682,
+                    "ap2ID": 1745963483820
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 1745963268396,
                     "ap2ID": 1745963303384
@@ -289,7 +326,7 @@
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         }
     ],
     "allConnectors": [],
